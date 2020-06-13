@@ -2,64 +2,66 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Race game</title>
+  <title>Animal Racing</title>
     </head>
-    <body>
-   
-<!-- screen 1 -->     
      
-    <div id="scene"> 
-     <h1 id="title"> Animal Racing </h1>
-     <p id="choice"> Press <a href="chose_start.html">START</a> to begin!</p>  
-        </div>
+  <h1>Animal Racing</h1>
+ 
+   <img src="https://img.freepik.com/free-photo/green-grass-texture-with-blang-copyspace-against-blue-sky_31825-541.jpg?size=626&ext=jpg">
+   
+    <img id="dog" src="https://www.kasandbox.org/programming-images/avatars/duskpin-ultimate.png"> 
     
     <style>
+    
+      h1{ color:purple;
+       position:absolute;
+    left:113px;
+    top:50px;    
+    font-size:60px;
+    font-family:cursive;
+    background-color:red; 
+      
+      }   
+   
+      img{ height:auto;
+        margin-left:auto;
+        margin-right:auto;
+         }
+   
+    #dog{ position:absolute;
+    top:200px;
+    left:216px;
+    width:150px;
+      }
+   
+   #button1{
+       position:absolute;
+   top:340px;
+   left:400px;    
+  width:150px;
+   height:50px;
+   background-color:transparent;    
+   color:black;
+     font-size:20px;  
+   font-family:cursive;
+       
+   }
 
-        body{ font-size: 25px; 
-            background:black;
-            color:white; 
-            font-family:cursive;
-        } 
-     
-     h1{ font-family:fantasy;
-         font-size:40px;
-         
-         position:absolute;
-         left:170px;
-         
-     }   
-    
-       a{ color:purple;
-        text-decoration:none;  
-       }
-    a:hover{
-        text-decoration:underline; 
-    } 
-    
-    #scene{
+    #button1:hover{
+  background-color:red;
+  color: white; 
+    }    
         
-        background: url("https://www.kasandbox.org/programming-images/avatars/duskpin-ultimate.png")no-repeat;
-    height:150px;
-   width:200px;   
-    position:absolute;
-   left:138px;
-    top:93px;
-    }
-  
-  #choice{ position:absolute;
- top:119px;
-  left:-64px;
-  background-color:green; 
- padding:-4px;     
-  } 
- 
- #title{ position:absolute;
- left:-68px;
-    top:-79px;
- }    
     </style>
 
+  <body>
+  
+    <a href="menu.html">
+    <button id="button1">START</button>
+    </a>
+    
 
 
-    </body>
+
+  </body>
 </html>
